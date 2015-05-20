@@ -45,8 +45,7 @@ func signCall(paramstring string) string {
 	buffer.WriteString(SECRIT)
 	//fmt.Println("signature:", buffer.String())
 
-	hashy := hashy(buffer.String())
-	return hashy
+	return hashy(buffer.String())
 }
 
 func getAuthToken() string {
